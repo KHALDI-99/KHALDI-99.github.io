@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OuiHallo | Automatisation des réceptions téléphoniques pour hôtels et restaurants</title>
+    <meta name="description" content="Remplacez vos réceptionnistes téléphoniques par une IA intelligente. Répondez aux appels 24/7, prenez des réservations et gérez les demandes clients automatiquement.">
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/ouihallo.png" type="image/x-icon">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Barre de navigation (modifiée) -->
+    <header class="header">
+        <div class="container">
+            <div class="navbar-brand">
+                <a href="#" class="logo">
+                    <span>OuiHallo</span>
+                </a>
+                <a href="#demo" class="btn btn-primary demo-btn">Démo gratuite</a>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#features">Fonctionnalités</a></li>
+                  <!--  <li><a href="#how-it-works">Comment ça marche ?</a></li> -->
+                    <li><a href="#pricing">Tarifs</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Automatisez votre standard téléphonique avec l'IA</h1>
+                <p>Ne ratez plus aucun appel. Répondez aux clients, prenez des réservations et gérez les demandes 24h/24, sans employé.</p>
+                <div class="hero-buttons">
+                    <a href="#demo" class="btn btn-primary">Essayer gratuitement</a>
+                    <a href="#how-it-works" class="btn btn-secondary">En savoir plus</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="assets/hero-illustration.svg" alt="IA téléphonique pour restaurants et hôtels">
+            </div>
+        </div>
+    </section>
+
+    <!-- Fonctionnalités -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2>Ce que notre IA peut faire pour vous</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-phone-volume"></i>
+                    </div>
+                    <h3>Réponse 24/7</h3>
+                    <p>Votre ligne est toujours ouverte, même la nuit ou les jours fériés.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <h3>Prise de réservations</h3>
+                    <p>L'IA note les réservations directement dans votre système.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>Personnalisation</h3>
+                    <p>Adaptez le ton (professionnel, amical) et les réponses.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Analytics</h3>
+                    <p>Suivez les appels, les demandes fréquentes et les heures d'affluence.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Démo Vidéo -->
+    <section id="demo" class="demo">
+        <div class="container">
+            <h2>Découvrez OuiHallo en action</h2>
+            <div class="video-wrapper">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/EXEMPLE" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tarifs (version modifiée avec 3 offres) -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <h2>Des tarifs adaptés à votre activité</h2>
+            <div class="pricing-cards">
+                <div class="pricing-card">
+                    <h3>Starter</h3>
+                    <div class="price">49€<span>/mois</span></div>
+                    <ul>
+                        <li><i class="fas fa-check"></i> 100 appels/mois</li>
+                        <li><i class="fas fa-check"></i> Réponses basiques</li>
+                        <li><i class="fas fa-check"></i> Support email</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline">Choisir</a>
+                </div>
+                <div class="pricing-card popular">
+                    <span class="popular-badge">Populaire</span>
+                    <h3>Pro</h3>
+                    <div class="price">99€<span>/mois</span></div>
+                    <ul>
+                        <li><i class="fas fa-check"></i> 500 appels/mois</li>
+                        <li><i class="fas fa-check"></i> Prise de réservations</li>
+                        <li><i class="fas fa-check"></i> Support prioritaire</li>
+                        <li><i class="fas fa-check"></i> Analytics de base</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary">Choisir</a>
+                </div>
+                <div class="pricing-card premium">
+                    <h3>Premium</h3>
+                    <div class="price">199€<span>/mois</span></div>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Appels illimités</li>
+                        <li><i class="fas fa-check"></i> Intégration CRM</li>
+                        <li><i class="fas fa-check"></i> Personnalisation avancée</li>
+                        <li><i class="fas fa-check"></i> Support 24/7</li>
+                        <li><i class="fas fa-check"></i> Rapports détaillés</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline">Choisir</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Prêt à automatiser votre standard ?</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <input type="text" placeholder="Votre nom" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" placeholder="Téléphone">
+                </div>
+                <div class="form-group">
+                    <select required>
+                        <option value="" disabled selected>Type d'établissement</option>
+                        <option value="restaurant">Restaurant</option>
+                        <option value="hotel">Hôtel</option>
+                        <option value="other">Autre</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Demander une démo</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="#" class="logo">
+                        <span>OuiHallo</span>AI
+                    </a>
+                    <p>La solution intelligente pour gérer vos appels clients automatiquement.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Liens</h4>
+                    <ul>
+                        <li><a href="#features">Fonctionnalités</a></li>
+                        <li><a href="#pricing">Tarifs</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Légal</h4>
+                    <ul>
+                        <li><a href="#">CGV</a></li>
+                        <li><a href="#">Confidentialité</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> contact@callflow-ai.com</li>
+                        <li><i class="fas fa-phone"></i> +33 6 12 34 56 78</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 CallFlow AI. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
