@@ -49,12 +49,14 @@ document.querySelectorAll('.feature-card, .pricing-card').forEach(el => {
 window.addEventListener('scroll', animateOnScroll);
 window.addEventListener('load', animateOnScroll);
 
-// Smooth scrolling pour les ancres
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function(e) {
-    e.preventDefault();
-    document.querySelector(this.getAttribute('href')).scrollIntoView({
-      behavior: 'smooth'
-    });
-  });
+// Validation avant envoi
+document.querySelector('.contact-form').addEventListener('submit', function(e) {
+    const phoneInput = this.elements.telephone;
+    
+    if (!/^[0-9]{10}$/.test(phoneInput.value)) {
+        e.preventDefault();
+        alert("Le téléphone doit contenir 10 chiffres");
+        phoneInput.focus();
+    }
+    // Formspree gère l'envoi et la redirection
 });
